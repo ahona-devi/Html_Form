@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        label {
+            display: block;
+            color: #444;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 48%;
+            padding: 10px;
+            background-color: #7056a8;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body style="font-family: Arial; background-color: #eeeaf7; margin: 0;">
+
+    <!-- Header Section -->
+
+    <div style="background-color: #7056a8; color: white; text-align: center; padding: 12px;">
+
+        <h1 style="font-size: 24px; margin: 5px;">Create Your Account</h1>
+
+        <p style="margin: 5px;">Register Now</p>
+
+    </div>
+
+    <!-- Registration Form -->
+
+    <div style="background-color: white; width: 500px; margin: 20px auto; padding: 25px; border-radius: 10px;">
+
+        <h2 style="text-align: center; color: #7056a8; margin-top: 5px;">
+            Registration Form
+        </h2>
+
+        <form method="POST">
+
+            <!-- Text Input -->
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="full_name"
+            placeholder="Enter your full name" required>
+
+            <!-- Email Input -->
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+            placeholder="Enter your email" required>
+
+            <!-- Password Input -->
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"
+            placeholder="Enter your password" required>
+
+            <!-- Radio Buttons -->
+
+            <label>Gender</label>
+
+            <input type="radio" id="male" name="gender"
+            value="male" required
+            style="width: auto; margin: 0;">
+
+            <label for="male" style="display: inline;">Male</label>
+
+            <input type="radio" id="female" name="gender"
+            value="female" style="width: auto; margin: 0;">
+
+            <label for="female" style="display: inline;">Female</label>
+
+            <input type="radio" id="other" name="gender"
+            value="other" style="width: auto; margin: 0;">
+
+            <label for="other" style="display: inline;">Other</label>
+
+            <br><br>
+
+            <!-- Checkboxes -->
+
+            <label>Select Your Interests</label>
+
+            <input type="checkbox" id="coding" name="interests"
+            value="coding" style="width: auto; margin: 0;">
+
+            <label for="coding" style="display: inline;">Coding</label>
+
+            <input type="checkbox" id="reading" name="interests"
+            value="reading" style="width: auto; margin: 0;">
+
+            <label for="reading" style="display: inline;">Reading</label>
+
+            <input type="checkbox" id="sports" name="interests"
+            value="sports" style="width: auto; margin: 0;">
+
+            <label for="sports" style="display: inline;">Sports</label>
+
+            <br><br>
+
+            <!-- Dropdown Menu -->
+
+            <label for="country">Select Your Country</label>
+
+            <select id="country" name="country" required>
+                <option value="">Choose Your Country</option>
+                <option value="bangladesh">Bangladesh</option>
+                <option value="india">India</option>
+                <option value="canada">Canada</option>
+            </select>
+
+            <!-- Date Input -->
+
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="date_of_birth" required>
+
+            <!-- Telephone Input -->
+
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone"
+            placeholder="Enter your phone number" required>
+
+            <!-- Textarea -->
+
+            <label for="address">Address</label>
+
+            <textarea id="address" name="address"
+            rows="2" placeholder="Enter your address" required></textarea>
+
+            <!-- Terms and Conditions -->
+
+            <input type="checkbox" id="terms" name="terms"
+            value="accepted" required
+            style="width: auto; margin: 0;">
+
+            <label for="terms" style="display: inline;">
+                I agree to the Terms and Conditions
+            </label>
+
+            <br><br>
+
+            <!-- Submit and Reset Buttons -->
+
+            <button type="submit">Register</button>
+
+            <button type="reset" style="background-color: #777;">
+                Reset
+            </button>
+
+        </form>
+
+        <p style="text-align: center; margin-bottom: 5px;">
+            Already have an account?
+            <a href="login.html" style="color: #7056a8; text-decoration: none;">
+                Login
+            </a>
+        </p>
+
+    </div>
+
+</body>
+</html>
